@@ -12,8 +12,7 @@ class Game:
         self.window = pygame.display.set_mode(size=(WIN_WIDTH, WIN_HEIGHT))
 
     def run(self):
-        pygame.mixer_music.load('./asset/audio_menu.wav')
-        pygame.mixer_music.play(-1)
+
 
 
         while True:
@@ -21,12 +20,3 @@ class Game:
             menu.run()
             pass
 
-
-
-
-
-            #check for all event
-            #for event in pygame.event.get():
-                #if event.type == pygame.QUIT:
-                    #pygame.quit()  # Close window
-                    #quit()  # end pygame
