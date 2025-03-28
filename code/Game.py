@@ -1,5 +1,7 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
+import sys
+
 import pygame
 
 from code.Consty import WIN_WIDTH, WIN_HEIGHT, MENU_OPTION
@@ -36,4 +38,5 @@ class Game:
                 pygame.quit()  # Close window
                 quit()  # end pygame
             else:
-                pass
+                pygame.quit()
+                sys.exit()
